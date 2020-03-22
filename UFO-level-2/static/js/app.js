@@ -23,6 +23,9 @@ var filterList = []
 // capture button click
 button.on("click", function() {
 
+  // Prevent the page from refreshing
+  d3.event.preventDefault();
+
   // Select the input elements and get the raw HTML nodes
   var dateInput = d3.select("#datetime");
   var datetime = dateInput.property("value");

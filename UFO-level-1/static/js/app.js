@@ -17,7 +17,11 @@ data.forEach((sighting) => {
 // Create variable for the 'Filter Table' button
 var button = d3.select("#filter-btn");
 
+// create function for button click event 
 button.on("click", function() {
+
+  // Prevent the page from refreshing
+  d3.event.preventDefault();
 
   // Select the input element and get the raw HTML node -- filter by datetime
   var dateInput = d3.select("#datetime");
