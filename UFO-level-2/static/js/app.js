@@ -33,7 +33,6 @@ button.on("click", function() {
   var cityInput = d3.select("#cityname");
   var cityname = cityInput.property("value");
   
-
   var stateInput = d3.select("#statename");
   var statename = stateInput.property("value");
 
